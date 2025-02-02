@@ -1,0 +1,25 @@
+import React from "react";
+import passdepart from "../assets/passbuilding.jpg";
+
+function Apply() {
+  return (
+    <div className="relative w-full h-screen">
+      {/* Background Image */}
+      <img
+        className="w-full h-full object-cover"
+        src={passdepart}
+        alt="Passport department"
+      />
+      {/* Black Opacity Overlay */}
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+
+      {/* Content (Optional) */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
+        <h1 className="text-4xl font-bold">Apply for Your E-Passport</h1>
+        <p className="text-lg mt-2">Fast, Secure, and Convenient</p>
+      </div>
+    </div>
+  );
+}
+
+export default Apply;
